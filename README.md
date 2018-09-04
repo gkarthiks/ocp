@@ -17,7 +17,14 @@ So now, I have to do `ocp <ns>`. This will set my current context in OC and sets
 ```shell
 function ocp () {
     oc project "$@"
-    export TILLER_NAMESPACE="$@"
+	if [ -z "$@" ] 
+	then
+		echo "Using project \"$TILLER_NAMESPACE\" as tiller-namespace.";
+	 
+	else
+		export TILLER_NAMESPACE="$@";
+		echo "Now using project \"$TILLER_NAMESPACE\" as tiller-namespace.";
+	fi
 }
 ```
 
