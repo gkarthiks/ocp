@@ -38,3 +38,23 @@ function ocp () {
 ocp kube-system
 ```
 and use `helm` commands without the `--tiller-namespace` flag.
+
+
+## How to use:
+
+##### Changing project:
+
+```
+ocp default
+```
+
+> Now using project "default" on server "https://k8s.com:8443". <br/>
+Now using project "default" as tiller-namespace.
+
+##### Checking current project
+```
+ocp
+```
+
+>Using project "default" on server "https://k8s.com:8443". <br/>
+Using project "default" as tiller-namespace.
