@@ -10,7 +10,7 @@ Since, I felt it is so difficuilt to type every time two different commands, I w
 So now, I have to do `ocp <ns>`. This will set my current context in OC and sets the tiller environment variable as well.
 
 
-## TL:DR;
+## TL;DR
 
 **Step 1:** Copy the below bash function
 
